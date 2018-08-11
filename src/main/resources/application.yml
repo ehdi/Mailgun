@@ -1,0 +1,31 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overridden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+#
+# More information on profiles: http://www.jhipster.tech/profiles/
+# More information on configuration properties: http://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+    application:
+        name: MailGun
+
+mailgun:
+  from:
+  domain:
+  username:
+  apiKey:
+
+#mailgun:
+#  from: postmaster@mg.avand.io
+#  domain: mg.avand.io
+#  username: api
+#  apiKey: f066257be5bee16639b8cb420426711d-a5d1a068-3f41d055
