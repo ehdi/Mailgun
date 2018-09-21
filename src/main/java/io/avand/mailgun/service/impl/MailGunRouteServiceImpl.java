@@ -1,5 +1,6 @@
 package io.avand.mailgun.service.impl;
 
+import io.avand.mailgun.config.MailGunConfig;
 import io.avand.mailgun.repository.MailGunRouteRepository;
 import io.avand.mailgun.service.MailGunRouteService;
 import io.avand.mailgun.service.dto.request.MailGunCreateRouteRequestDTO;
@@ -11,11 +12,13 @@ import io.avand.mailgun.service.dto.response.MailGunGetRouteByIdResponseDTO;
 import io.avand.mailgun.service.error.MailGunException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
+@EnableConfigurationProperties(MailGunConfig.class)
 public class MailGunRouteServiceImpl implements MailGunRouteService {
 
     private final Logger log = LoggerFactory.getLogger(MailGunRouteServiceImpl.class);

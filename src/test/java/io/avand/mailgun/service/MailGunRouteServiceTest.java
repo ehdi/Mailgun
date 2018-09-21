@@ -1,7 +1,5 @@
 package io.avand.mailgun.service;
 
-import io.avand.mailgun.MailgunApplication;
-import io.avand.mailgun.MailgunApplicationTests;
 import io.avand.mailgun.service.dto.request.MailGunCreateRouteRequestDTO;
 import io.avand.mailgun.service.dto.request.MailGunGetAllRouteRequestDTO;
 import io.avand.mailgun.service.dto.request.MailGunGetRouteByIdRequestDTO;
@@ -16,7 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {MailgunApplication.class})
+@SpringBootTest
 public class MailGunRouteServiceTest {
 
     @Autowired

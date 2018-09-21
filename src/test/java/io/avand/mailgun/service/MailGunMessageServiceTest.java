@@ -1,6 +1,6 @@
 package io.avand.mailgun.service;
 
-import io.avand.mailgun.MailgunApplication;
+
 import io.avand.mailgun.service.dto.request.MailGunSendMessageRequestDTO;
 import io.avand.mailgun.service.dto.response.MailGunSendMessageResponseDTO;
 import io.avand.mailgun.service.error.MailGunException;
@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = MailgunApplication.class)
+@SpringBootTest
 public class MailGunMessageServiceTest {
 
     @Autowired
