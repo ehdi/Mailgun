@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.avand</groupId>
+    <groupId>hr.pishe</groupId>
     <artifactId>mailgun</artifactId>
     <version>0.0.5-RELEASE</version>
     <packaging>jar</packaging>
@@ -62,13 +62,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>artifactory.avand.io-releases</name>
-            <url>http://artifactory.avand.io:8081/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement>
 
 </project>
